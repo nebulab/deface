@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'polyglot'
 
 require 'deface/dsl/context'
@@ -68,7 +70,7 @@ module Deface
       end
 
       def self.extract_dsl_commands_from_erb(html_file_contents)
-        dsl_commands = ''
+        dsl_commands = String.new
 
         while starts_with_html_comment?(html_file_contents)
           first_open_comment_index = html_file_contents.lstrip.index('<!--')
@@ -91,7 +93,7 @@ module Deface
       end
 
       def self.extract_dsl_commands_from_haml(file_contents)
-        dsl_commands = ''
+        dsl_commands = String.new
 
         while starts_with_haml_comment?(file_contents)
           first_open_comment_index = file_contents.lstrip.index('/')

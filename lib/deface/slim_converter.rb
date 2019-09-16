@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'slim/erb_converter'
 
 module Deface

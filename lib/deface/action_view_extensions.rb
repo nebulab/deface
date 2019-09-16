@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 ActionView::Template.class_eval do
   alias_method :initialize_without_deface, :initialize
 

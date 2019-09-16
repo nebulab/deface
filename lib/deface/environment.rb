@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Deface
   DEFAULT_ACTIONS = [ Actions::Remove, Actions::Replace, Actions::ReplaceContents, Actions::Surround,
         Actions::SurroundContents, Actions::InsertBefore, Actions::InsertAfter, Actions::InsertTop,

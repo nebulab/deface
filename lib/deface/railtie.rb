@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Deface
   class Railtie < Rails::Railtie
     # include rake tasks.
